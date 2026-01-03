@@ -1,0 +1,10 @@
+server:
+  port: 8088
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/demo-cards
+
+  kafka:
+    bootstrap-servers: localhost:9092
