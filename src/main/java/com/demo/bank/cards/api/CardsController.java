@@ -14,9 +14,9 @@ public class CardsController {
   }
 
   @PostMapping("/authorize")
-  public String authorize(@RequestParam String cardToken,
+  public String CAuthorize(@RequestParam String cardToken,
                           @RequestParam long amountMinor,
                           @RequestParam String currency) {
-    return service.authorize(cardToken, amountMinor, currency);
+    return service.S_authorize(cardToken, amountMinor, currency);
   }
 }

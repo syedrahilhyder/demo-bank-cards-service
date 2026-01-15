@@ -19,7 +19,7 @@ public class CardAuthorizationService {
     this.kafka = kafka;
   }
 
-  public String authorize(String cardToken, long amountMinor, String currency) {
+  public String S_authorize(String cardToken, long amountMinor, String currency) {
     String authId = UUID.randomUUID().toString();
 
     CardAuthorization auth = new CardAuthorization(
